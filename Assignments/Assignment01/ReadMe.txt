@@ -1,0 +1,1 @@
+This is my first assignment submission. Just proving Android Studio works on my laptop and I at least understand how to push to GitHub.
