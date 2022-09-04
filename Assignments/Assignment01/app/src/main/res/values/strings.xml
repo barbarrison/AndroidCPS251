@@ -3,4 +3,5 @@
     <string name="convert_string">Convert</string>
     <string name="dollars_hint">Dollars</string>
     <string name="no_value_string" />
-</resources>
+    <string name="euroConversionHint">Euro Conversion!</string>
+    </resources>
