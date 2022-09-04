@@ -3,5 +3,6 @@
     <string name="convert_string">Convert</string>
     <string name="dollars_hint">Dollars</string>
     <string name="no_value_string" />
-    <string name="euroConversionHint">Euro Conversion!</string>
-    </resources>
+    <string name="conversionHint">Your conversion will show here</string>
+    <string name="conversionLabel">Euros</string>
+</resources>

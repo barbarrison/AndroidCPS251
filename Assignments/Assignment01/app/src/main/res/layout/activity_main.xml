@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/euroConversionHint"
+        android:text="@string/conversionHint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.209"
@@ -48,7 +48,7 @@
         android:layout_width="128dp"
         android:layout_height="18dp"
         android:layout_marginStart="77dp"
-        android:text="Euros"
+        android:text="@string/conversionLabel"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView"
         app:layout_constraintStart_toEndOf="@+id/textView" />
 
