@@ -17,8 +17,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewOne"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewOne" />
 
     <Button
         android:id="@+id/buttonThree"
@@ -46,8 +45,8 @@
 
     <TextView
         android:id="@+id/textViewOne"
-        android:layout_width="413dp"
-        android:layout_height="117dp"
+        android:layout_width="420dp"
+        android:layout_height="70dp"
         android:gravity="center"
         android:text="@string/textViewOne"
         android:textColor="#E53935"
@@ -60,16 +59,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="107dp"
-        android:layout_height="98dp"
-        android:layout_marginBottom="208dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:contentDescription="@string/photoDesc"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/smileyface" />
 
     <TableLayout
@@ -130,4 +126,11 @@
         </TableRow>
 
     </TableLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.56" />
 </androidx.constraintlayout.widget.ConstraintLayout>
