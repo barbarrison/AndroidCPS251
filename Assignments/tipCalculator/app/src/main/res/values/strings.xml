@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="displayHeadline">Your tip will display here.</string>
+    <string name="tipLabel01">10% Tip</string>
+    <string name="tipLabel02">15% Tip</string>
+    <string name="tipLabel03">20% Tip</string>
+    <string name="calcButton">Calculate Tip</string>
+    <string name="inputHint">Enter Bill Total</string>
+    <string name="tip01"></string>
+    <string name="tip02"></string>
+    <string name="tip03"></string>
+    <string name="tipTotal01"></string>
+    <string name="tipTotal02"></string>
+    <string name="tipTotal03"></string>
+    <string name="totalLabel01">Total</string>
+    <string name="totalLabel02">Total</string>
+    <string name="totalLabel03">Total</string>
+</resources>
