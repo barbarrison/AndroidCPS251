@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Name List App Redux</string>
+    <string name="inputHint">Enter a name</string>
+    <string name="inputButton">Add name</string>
+    <string name="emptyList">No names to display</string>
+    <string name="clearList">Clear</string>
+</resources>

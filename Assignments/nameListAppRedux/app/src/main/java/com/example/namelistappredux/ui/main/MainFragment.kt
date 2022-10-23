@@ -1,4 +1,4 @@
-package com.example.namelistapp.ui.main
+package com.example.namelistappredux.ui.main
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.namelistapp.databinding.FragmentMainBinding
+import androidx.lifecycle.Observer
+import com.example.namelistappredux.R
+import com.example.namelistappredux.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
 
@@ -41,15 +43,15 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        binding.displayNameList.text = viewModel.getNames()
+        val nameListObserver = Observer<String>{
+            outputNames -> binding.displayNameList.text = outputNames.toString()
+        }
+        viewModel.getNames().observe(viewLifecycleOwner,nameListObserver)
 
         binding.addNameButton.setOnClickListener {
-
             if(!binding.inputPersonName.text.toString().trim().isEmpty()){
                 viewModel.addName(binding.inputPersonName.text.toString())
-                binding.displayNameList.text = viewModel.getNames()
                 binding.inputPersonName.text.clear()
-
             }else{
                 binding.inputPersonName.text.clear()
             }
@@ -57,7 +59,7 @@ class MainFragment : Fragment() {
         }
 
         binding.clearButton.setOnClickListener {
-            binding.displayNameList.text = "No names to display."
+            binding.displayNameList.text = getString(R.string.emptyList)
             viewModel.clearNames()
 
         }
