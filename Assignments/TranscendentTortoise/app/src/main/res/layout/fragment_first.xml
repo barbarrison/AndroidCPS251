@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <Button
+        android:id="@+id/imgButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn1"
+        app:layout_constraintBottom_toTopOf="@+id/imgButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mainImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/imgButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn2"
+        app:layout_constraintBottom_toTopOf="@+id/imgButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mainImage2"
+        app:layout_constraintTop_toBottomOf="@+id/imgButton1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/imgButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mainImage3"
+        app:layout_constraintTop_toBottomOf="@+id/imgButton2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/image1"
+        app:layout_constraintBottom_toTopOf="@+id/mainImage2"
+        app:layout_constraintEnd_toStartOf="@+id/imgButton1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/android_image_1"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/mainImage2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/image2"
+        app:layout_constraintBottom_toTopOf="@+id/mainImage3"
+        app:layout_constraintEnd_toStartOf="@+id/imgButton2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/android_image_2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/mainImage3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/image3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgButton3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage2"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/android_image_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

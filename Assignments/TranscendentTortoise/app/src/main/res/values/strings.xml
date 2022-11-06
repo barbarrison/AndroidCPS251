@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Transcendent Tortoise</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Image List</string>
+    <string name="second_fragment_label">Main Image Display</string>
+    <string name="btn1">Image One</string>
+    <string name="btn2">Image Two</string>
+    <string name="btn3">Image Three</string>
+    <string name="previous">Previous</string>
+    <string name="image3">Android 3</string>
+    <string name="image2">Android 2</string>
+    <string name="image1">Android 1</string>
+    <string name="bigImageDisplay">Big Image</string>
+    <string name="menuExit">EXIT</string>
+    <string name="menuAbout">ABOUT</string>
+
+</resources>
